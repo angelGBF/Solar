@@ -1,0 +1,170 @@
+/* Section container */
+.solar_section_five {
+  display: grid; /* Crea un diseño de cuadrícula */
+  grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de ancho completo */
+  grid-gap: 30px; /* Agrega espaciado entre elementos */
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+/* Título principal */
+.solar_title_principal_five {
+  background-color: rgba(198, 240, 198, 0.8);
+  font-size: 2rem;
+  font-weight: bold;
+  grid-column: 1 / 3; /* Ocupa las dos columnas */
+  grid-row: 1; /* Ocupa la primera fila */
+  text-align: center;
+  color: #1a1919;
+}
+
+.card_value{
+  text-align: justify;
+  padding: 1%;
+}
+
+
+/* Título de la visión */
+.solar_title_five {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.solar_title_five_right {
+  text-align: right;
+}
+
+/* Contenedor de la misión */
+.card_value_1{
+  grid-column: 2; /* Ocupa la segunda columna */
+}
+
+
+/* Imagen (Visión) */
+.solar_img_square_five {
+  width: 100%; /* Ocupa todo el ancho de la columna */
+  height: 300px; /* Ajusta la altura según la imagen */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  grid-column: 1; /* Ocupa la primera columna */
+  grid-row: 2; /* Ocupa la segunda fila */
+}
+
+.divide_img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+}
+.divide_img_1{
+  grid-column: 1; /* Ocupa la primera columna */
+  grid-row: 2; /* Ocupa la segunda fila */
+}
+
+.divide_img_2{
+  grid-column: 2; /* Ocupa la primera columna */
+  grid-row: 3; /* Ocupa la segunda fila */
+
+}
+
+/* Párrafo de la visión */
+.solar_p_five_1,
+.solar_p_five_2,
+.solar_p_five_3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+
+/* Contenedor de la imagen y los textos (Misión) */
+.solar_divide_five_P2 {
+  grid-column: 2; /* Ocupa la segunda columna */
+  grid-row: 3; /* Ocupa la segunda fila */
+  display: flex; /* Divide en dos columnas */
+  flex-direction: row-reverse; /* Coloca la imagen a la derecha y los textos a la izquierda */
+}
+
+/* Imagen (Misión) */
+.solar_img_square_five {
+  width: 100%; /* Ocupa todo el ancho de la columna */
+  height: 300px; /* Ajusta la altura según la imagen */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; /* Espaciado entre la imagen y los textos */
+}
+
+
+/* Contenedor de la vision */
+.card_value_2{
+  grid-column: 1; /* Ocupa la segunda columna */
+}
+
+/* Título de la misión */
+.solar_title_five {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Párrafo de la misión */
+.solar_p_five_1,
+.solar_p_five_2,
+.solar_p_five_3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1440px) {
+  /* Estilos para el Galaxy S23 y dispositivos con una resolución mayor */
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1440px) {
+  /* Estilos para el Galaxy S10 y dispositivos con una resolución de 1440px */
+}
+
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+  /* Estilos para dispositivos con una resolución entre 360px y 1440px */
+
+  /* Cambiamos el diseño de la cuadrícula para que solo tenga una columna */
+  .solar_section_five {
+    grid-template-columns: 1fr;
+  }
+
+  .solar_title_principal_five {
+      font-size: calc(1.2em + 1.2vw);
+  }
+
+  .solar_img_square_five {
+    display: none;
+  }
+
+  .card_value_1{
+    grid-column: 1 / 3; /* Ocupa las dos columnas */
+    grid-row: 2;
+  }
+
+  .card_value_2{
+    grid-column: 1 / 3; /* Ocupa las dos columnas */
+    grid-row: 3;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 360px) {
+  /* Estilos para dispositivos con una resolución menor a 360px, como el Galaxy S10 */
+}
+
+
+

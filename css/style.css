@@ -1,0 +1,203 @@
+* {
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columnas de ancho con fracciones iguales */
+  margin: 0;
+  padding: 0;
+}
+
+
+.solar_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: rgba(198, 240, 198, 0.8);
+  color: #141414;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 0.5%;
+  grid-row: 1;
+}
+
+.solar_img_head{
+  width: 14vw;
+
+}
+
+  .solar_img_head_logo{
+    width: 18vw;
+  }
+
+
+.solar_h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.solar_section_one {
+  position: relative;
+  text-align: center;
+  background-image: url("/image/head/head1.png"); /* Reemplaza la URL con la ruta de tu imagen de fondo */
+  background-position: center; /* Ajusta según tus preferencias */
+  background-size: cover; /* Ajusta según tus preferencias */
+  margin-bottom: 0.5%;
+  grid-row: 2;
+}
+
+
+.solar_img_cabecera {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+
+/*
+.solar_img_cabecera {
+  animation: move-right 25s linear infinite;
+  -webkit-animation: move-right 25s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+}
+  100% {
+    transform: translateX(0);
+  }
+}
+*/
+
+.solar_title_one {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  font-size: calc(2em + 3vw);
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.solar_p_one {
+  margin: 10px 0;
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  padding-right: 3%;
+  font-size: calc(1.3em + 1.3vw);
+  text-align: left;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.solar_section_two{
+  grid-template-columns: repeat(10, 1fr);
+  background-color: rgba(218, 140, 89, 0.5);
+  color: #070707;
+  padding: 3%;
+  text-align: justify;
+  margin-bottom: 0.5%;
+  grid-row: 3;
+}
+
+
+/*--------------------------------------------------------*/
+
+
+/* Media query para pantallas de menos de 768px */
+
+@media (max-width: 768px) {
+
+  .solar_h1 {
+    font-size: calc(0.6em + 0.6vw);
+    margin: 0;
+  }
+
+  .solar_title_one {
+    top: 10%;
+    font-size: calc(1.5em + 1.5vw);
+  }
+
+  .solar_p_one{
+    top: 60%;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: center;
+  }
+
+  .solar_header{
+    margin-bottom: 2%;
+    padding: 10px;
+  }
+
+  .solar_img_head{
+    width: 18vw;
+  }
+  
+
+
+  .solar_img_cabecera {
+  animation: move-right 0s linear infinite;
+  -webkit-animation: move-right 0s linear infinite;
+  overflow: hidden;
+  }
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+}
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.solar_section_one {
+    margin-bottom: 2%;
+}
+.solar_section_two{
+  padding: 5%;
+}
+
+}
+
+/* Media query para pantallas de menos de 480px */
+@media (max-width: 480px) {
+
+
+
+}
+
+

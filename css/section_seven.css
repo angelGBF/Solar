@@ -1,0 +1,32 @@
+/* CSS para crear un food con un texto lorem, un texto copyright 2024 y un icono */
+
+/* Sección contenedor */
+.solar_section_seven {
+  display: flex; /* Crea un diseño de flexbox */
+  flex-direction: row; /* Coloca los elementos en una fila */
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  padding: 30px;
+  background-color: rgba(198, 240, 198, 0.8);
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Texto lorem */
+.solar_P_section_seven {
+  font-size: calc(0.6em + 0.4vw);
+  
+  color: #252424;
+}
+
+/* Texto copyright */
+.solar_copyright_section_seven {
+  font-size: calc(0.6em + 0.4vw);   
+  color: #252424;
+}
+
+/* Icono */
+.solar_section_seven_icon {
+  width: 30px;
+  height: 30px;
+}
